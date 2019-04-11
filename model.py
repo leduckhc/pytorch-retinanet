@@ -10,7 +10,7 @@ from lib.nms.pth_nms import pth_nms
 
 def nms(dets, thresh):
     "Dispatch to either CPU or GPU NMS implementations.\
-    Accept dets as tensor"""
+    Accept dets as tensor"
     return pth_nms(dets, thresh)
 
 model_urls = {
